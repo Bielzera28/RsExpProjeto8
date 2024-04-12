@@ -9,7 +9,7 @@
   <script type="module" src="./js/main.js" defer></script>
 </head>
 <body>
-  <div>
+  <div class="container">
     <div>
       <section id="timer" class="flex">
         <span id="minutes">00</span>
@@ -23,29 +23,33 @@
         <button class="ph ph-pause-circle" data-action="toggleRunning">
           <span class="sr-only">Pausar contador</span>
         </button>
-        <button>
-          <span></span>
+        <button class="ph ph-plus-circle" data-action="plusRunning">
+          <span class="sr-only">Aumentar 5 minutos</span>
         </button>
-        <button>
-          <span></span>
+        <button class="ph ph-minus-circle" data-action="minusRunning">
+          <span class="sr-only">Diminuir 5 minutos</span>
         </button>
       </section>
     </div>
     <div>
-      <div>
-        <button>
-          <span></span>
+      <div >
+        <button id="toggle-mode">
+          <span class="sr-only1">Floresta</span>
+          <i></i>
         </button>
-        <button>
-          <span></span>
+        <button id="toggle-mode">
+          <span class="sr-only1">Chuva</span>
+          <i></i>
         </button>
       </div>
       <div>
-        <button>
-          <span></span>
+        <button id="toggle-mode">
+          <span class="sr-only1">Cafeteira</span>
+          <i></i>
         </button>
-        <button>
-          <span></span>
+        <button id="toggle-mode">
+          <span class="sr-only1">Lareira</span>
+          <i class="ph ph-fire"></i>
         </button>
       </div>
     </div>
