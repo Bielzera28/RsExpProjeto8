@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Focus Timer 2.0</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script type="module" src="./js/main.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <div class="timer-control">
+      <section id="timer" class="flex">
+        <span id="minutes">00</span>
+        <span>:</span>
+        <span id="seconds">00</span>
+      </section>
+      <section id="controls" class="flex">
+        <button class="ph ph-play-circle" data-action="toggleRunning">
+          <span class="sr-only">Iniciar contador</span>
+        </button>
+        <button class="ph ph-pause-circle" data-action="toggleRunning">
+          <span class="sr-only">Pausar contador</span>
+        </button>
+        <button class="ph ph-plus-circle" data-action="plusRunning">
+          <span class="sr-only">Aumentar 5 minutos</span>
+        </button>
+        <button class="ph ph-minus-circle" data-action="minusRunning">
+          <span class="sr-only">Diminuir 5 minutos</span>
+        </button>
+      </section>
+    </div>
+    <div class="toggle-section">
+      <div class="toggle-box">
+        <button id="toggle-mode">
+          <span class="sr-only">Floresta</span>
+          <i class="ph ph-tree"></i>
+        </button>
+        <button id="toggle-mode">
+          <span class="sr-only">Chuva</span>
+          <i class="ph ph-cloud-rain"></i>
+        </button>
+      </div>
+      <div class="toggle-box">
+        <button id="toggle-mode">
+          <span class="sr-only">Cafeteira</span>
+          <i class="ph ph-storefront"></i>
+        </button>
+        <button id="toggle-mode">
+          <span class="sr-only">Lareira</span>
+          <i class="ph ph-fire"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>
