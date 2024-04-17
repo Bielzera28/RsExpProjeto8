@@ -63,17 +63,30 @@ body {
   color: #323238;
 }
 
+.toggle-rain, .toggle-fire,
+.toggle-store, .toggle-forest{
+  padding: 3.2rem 2.5rem;
+  border-radius: 2rem;
+  background-color: #f0f0f0;
+}
+
+.toggle-rain.on {
+  background-color: rgb(47, 153, 219);
+}
+
+.toggle-fire.on {
+  background-color: #323238;
+}
+
 .toggle-box {
   display: flex;
   gap: 3.2rem;
 }
 
 .toggle-box:not(:first-child) {
-  margin-top: 3.2rem;
+  margin-top: 6rem;
 }
 
 .toggle-box button {
-  border-radius: 2rem;
-  padding: 3.2rem 2.5rem;
   cursor: pointer;
 }
