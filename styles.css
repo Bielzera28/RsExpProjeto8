@@ -75,7 +75,15 @@ body {
 }
 
 .toggle-fire.on {
-  background-color: #323238;
+  background-color: #cd653d;
+}
+
+.toggle-store.on {
+  background-color: rgb(222, 192, 138);
+}
+
+.toggle-forest.on {
+  background-color: rgb(71, 170, 71);
 }
 
 .toggle-box {

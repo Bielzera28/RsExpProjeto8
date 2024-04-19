@@ -1,11 +1,11 @@
 import state from "./state.js";
 import * as timer from "./timer.js";
-import * as el from "./elements.js";
+import * as audio from "./audio.js";
 
 export function toggleRunning() {
   state.isRunning = document.documentElement.classList.toggle("running");
   timer.countdown();
-  /* sounds.buttonPressAudio.play()*/
+  audio.buttonPressAudio.play()
 }
 
 export function plusRunning() {
@@ -17,6 +17,7 @@ export function plusRunning() {
   state.minutes = state.minutes + 5;
   minutes.textContent = String(state.minutes).padStart(2, "0");
   seconds.textContent = String(state.seconds).padStart(2, "0");
+  audio.buttonPressAudio.play()
 }
 
 export function minusRunning() {
@@ -27,4 +28,5 @@ export function minusRunning() {
 
   state.minutes = state.minutes - 5;
   minutes.textContent = String(state.minutes).padStart(2, "0");
+  audio.buttonPressAudio.play()
 }

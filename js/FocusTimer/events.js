@@ -1,8 +1,5 @@
 import { controls } from "./elements.js"
 import * as actions from "./actions.js"
-import * as el from "./elements.js"
-import { updateDisplay } from "./timer.js"
-import state from "./state.js"
 
 export function registerControls() {
   controls.addEventListener("click", (event) => {
@@ -12,11 +9,5 @@ export function registerControls() {
     }
     
     actions[action]()
-  })
-}
-
-export function setMinutes() {
-  el.minutes.addEventListener("focus" , () => {
-  el.minutes.textContent = ""
   })
 }
